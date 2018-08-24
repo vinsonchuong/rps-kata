@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<script>
+    function increment(x) {
+        const counter = document.querySelector('.counter');
+        const currentCount = Number(counter.textContent);
+        counter.textContent = String(currentCount + x)
+    }
+</script>
+<div class="counter">0</div>
+<button class="increment" onclick="increment(1)"></button>
+<button class="decrement" onclick="increment(-1)"></button>
